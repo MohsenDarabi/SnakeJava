@@ -13,6 +13,13 @@ public class GamePanel extends JPanel implements ActionListener {
     final int x[] = new int[GAME_UNITS];
     final int y[] = new int[GAME_UNITS];
     int bodyParts =6;
+    int applesEaten;
+    int applex;
+    int appley;
+    char direction = 'R';
+    boolean running = false;
+    Timer timer ;
+    Random random;
     public GamePanel() {
 
     }
