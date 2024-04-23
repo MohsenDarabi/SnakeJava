@@ -1,8 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JPanel;
+import java.awt.event.*;
+import javax.swing.*;
+import java.util.Random;
 
 public class GamePanel extends JPanel implements ActionListener {
     public GamePanel() {
@@ -28,11 +28,17 @@ public class GamePanel extends JPanel implements ActionListener {
 
     }
     public void gameOver(Graphics g){
-        
+
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
 
+    }
+    public class MyKeyAdapter extends KeyAdapter{
+        @Override
+        public void keyPressed(KeyEvent e){
+
+        }
     }
 }
