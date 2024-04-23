@@ -48,13 +48,18 @@ public class GamePanel extends JPanel implements ActionListener {
         }
         g.setColor(Color.red);
         g.fillOval(applex,appley,UNIT_SIZE,UNIT_SIZE);
-        
+
     }
     public void newApple(){
         applex = random.nextInt((int)(SCREEN_WIDTH/UNIT_SIZE))*UNIT_SIZE;
         appley = random.nextInt((int)(SCREEN_HEIGHT/UNIT_SIZE))*UNIT_SIZE;
     }
     public void movie(){
+        for(int i=bodyParts; i>0;i--){
+            x[i] = x[i-1];
+            y[i] = y[i-1];
+        }
+        
 
     }
     public void checkApple(){
