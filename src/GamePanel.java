@@ -29,6 +29,10 @@ public class GamePanel extends JPanel implements ActionListener {
         startGame();
     }
     public void  startGame(){
+        newApple();
+        running = true;
+        timer = new Timer(DELAY, this);
+        timer.start();
 
     }
 
@@ -39,7 +43,7 @@ public class GamePanel extends JPanel implements ActionListener {
 
     }
     public void newApple(){
-        
+
     }
     public void movie(){
 
